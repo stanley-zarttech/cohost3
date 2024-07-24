@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .form1 {
+            width: 350px;
+            /* height: 300px; */
+            /* border: 1px dotted red; */
+            padding: 10px 20px;
+            margin: 20px;
+            /* display: flex; */
+            /* overflow: hidden; */
+            box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .form2 {
+            width: 350px;
+            /* height: 250px; */
+            border: 1px dotted red;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 900;
+            color: blueviolet;
+        }
+
+        input,
+        select {
+            width: 300px;
+            border: 1px solid blueviolet;
+            border-radius: 30px;
+            height: 50px;
+            padding: 10px 20px;
+        }
+
+        input:focus {
+            border-radius: 20px;
+            border: 1px dotted greenyellow;
+        }
+
+        #heading {
+            color: rgb(78, 47, 106);
+        }
+
+        [data-type='first'] {
+            width: 200px;
+            color: brown;
+            font-style: italic;
+            border: 1px solid orange;
+            margin-right: 20px;
+        }
+
+        [data-type='submit'] {
+            background-color: blueviolet;
+            color: white;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Html Form</h1>
+
+    <form class="form1" method="post" action="https://zarttalent.io/api/v1/register/">
+        <label for="firstName">First Name:&nbsp;&nbsp;
+            <input name="firstName" id="firstName" type="text" required /></label>
+        <br />
+        <br />
+        <label for="lastName">Last Name:&nbsp;&nbsp; <input id="lastName" name="lastName" type="text" /> </label>
+        <br />
+        <br />
+        <label for="email">Email: &nbsp;&nbsp;
+            <input name="email" id="email" type="email" required /> </label>
+        <br />
+        <br />
+        <label for="phoneNumber">
+            Phone Number: &nbsp;&nbsp;
+            <input type="text" id="phoneNumber">
+        </label>
+        <br><br>
+        <input data-type="submit" type="submit" value="Submit">
+
+    </form>
+    <form class="form2" method="post" action="https://zarttalent.io/api/v1/register/">
+        <label for="firstName">First Name:&nbsp;&nbsp;
+            <input name="firstName" id="firstName" type="text" required /></label>
+        <br />
+        <br />
+        <label for="lastName">Last Name:&nbsp;&nbsp; <input id="lastName" name="lastName" type="text" /> </label>
+        <br />
+        <br />
+        <label for="email">Email: &nbsp;&nbsp;
+            <input name="email" id="email" type="email" required /> </label>
+        <br />
+        <br />
+        <label for="phoneNumber">
+            Phone Number: &nbsp;&nbsp;
+            <input type="text" id="phoneNumber">
+        </label>
+        <br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+    <br><br><br>
+    <h1>Types of form inputs</h1>
+    <form>
+        <label data-type="first" for="text-input">
+            Text Input <input type="text" />
+        </label>
+        <br><br><label for="tel-input">
+            Tel Input <input type="tel" />
+        </label>
+        <br><br><label for="radio-input">
+            Radio Input <input type="radio" />
+        </label>
+        <br><br><label for="checkbox-input">
+            Checkbox Input <input type="checkbox" />
+        </label>
+        <br><br>
+        <br><br><label for="checkbox-input">
+            Range Input <input type="range" />
+        </label>
+        <br><br>
+        <br><br><label for="checkbox-input">
+            Color Picker Input <input type="color" />
+        </label>
+        <br><br>
+        <br><br><label for="checkbox-input">
+            Date Input <input type="date" />
+        </label>
+        <br><br>
+        <br><br><label for="checkbox-input">
+            File Input <input type="file" />
+        </label>
+        <br><br>
+
+        <label for="checkbox-input">
+            Hidden Input <input type="hidden" />
+        </label>
+        <br><br>
+
+        <label for="checkbox-input">
+            Password Input <input type="password" />
+        </label>
+        <br><br>
+        <label for="selct">Select Department:
+            <select>
+                <option>Select your Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+            </select>
+        </label>
+        <br><br><br><br>
+    </form>
+</body>
+
+</html>

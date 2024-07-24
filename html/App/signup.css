@@ -1,0 +1,101 @@
+.main{
+   padding: 40px;
+   margin: 40px;
+}
+body{
+    background-color: ghostwhite;
+    height: 100vh;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.description{
+    color: rgb(126, 97, 154);
+}
+.app-name{
+    display: block;
+    margin: 0px;
+}
+.header{
+    margin-bottom: 40px;
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
+
+.form{
+    margin-top: 40px;
+    box-shadow: 0px 5px 9px 0 rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column; 
+    overflow-x: hidden;
+    overflow-y:visible;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 10px;
+}
+
+.form-input{
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    
+}
+
+label{
+    color: rgb(37, 29, 29);
+    font-size: 22px;
+}
+
+.submit{
+    background-color: blueviolet;
+    color: white;
+    height: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.submit:hover{
+    border-radius: 40px;
+    background-color: rgb(167, 96, 233);
+    color: antiquewhite;
+}
+.forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.forgot-password a{
+    text-decoration: none;
+}
+a:hover{
+    font-size: 18px;
+    transform: translateX(10%);
+    color: blueviolet;
+    font-weight: bold;
+
+}
+
+.signin-link{
+    margin-top: 50px;
+}
+
+.signin-link a{
+    text-decoration: none;
+}

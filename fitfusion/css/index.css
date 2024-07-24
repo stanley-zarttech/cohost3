@@ -1,0 +1,88 @@
+*{box-sizing: border-box;}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+   
+
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.header{
+        justify-content: space-between;
+   height: 330px;
+   padding: 20px;
+   position: relative;
+   background-image: url('../assets/backgr1.avif');
+background-size: cover;
+    /* To cover the whole div */
+    background-position: center;
+    /* To center the image */
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(rgb(55, 117, 111), white) */
+} 
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-menu {
+    display: flex;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.right-menu{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.menu-item{
+color: white;
+font-weight: bold;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.brand span{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.login{
+    border: 1px solid white;
+    padding:5px 20px;
+    border-radius: 30px;
+
+}
+
+.best-seller{
+    border: 1px solid white;
+    background-color: rgb(55, 117, 111);
+    padding: 5px 20px;
+    border-radius: 30px
+}
+
+.info{
+    top:200px;
+    position: absolute;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 400px;
+   /* color:rgb(55, 117, 111); */
+}
