@@ -2,9 +2,8 @@
 .main{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-   
+    width: 100%;
+    height: 100vh; 
 
 }
 a{
@@ -13,16 +12,14 @@ a{
 }
 .header{
         justify-content: space-between;
-   height: 330px;
+   height: 380px;
    padding: 20px;
    position: relative;
    background-image: url('../assets/backgr1.avif');
-background-size: cover;
-    /* To cover the whole div */
-    background-position: center;
-    /* To center the image */
-    background-repeat: no-repeat;
-    /* background-image: linear-gradient(rgb(55, 117, 111), white) */
+background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+ 
 } 
 .menu{
     display: flex;
@@ -77,12 +74,67 @@ font-weight: bold;
 }
 
 .info{
-    top:200px;
-    position: absolute;
-    color: white;
-    font-size: 54px;
-    font-weight: bold;
-    text-transform: capitalize;
-    width: 400px;
+    margin-top:110px;
+    /* position: absolute; */
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
    /* color:rgb(55, 117, 111); */
 }
+.info-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.avatar-btn{
+    display: flex;
+    gap: 20px;
+}
+.info-desc{
+    color: white;
+        font-size: 54px;
+        font-weight: bold;
+        text-transform: capitalize;
+        width: 400px;
+}
+.join-btn{
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px  15px;
+    border: none;
+    box-shadow: 0 4px 8px 1px;
+}
+#avatars{
+    display: block;
+}
+#avatars img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    
+}
+
+#avatars img:not(:first-child) {
+    margin-left:-13px;
+   
+}
+ .info-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+ }
+ .spacer{
+    flex: 0 1 1;
+ }
+ .info-right span:first-child{
+    background-color: rgba(60, 103, 120, 0.616);
+    width: fit-content;
+    padding: 5px 2px;
+    border-radius: 30px;
+    color: rgb(244, 237, 237);
+ }
+ .info-right span:not(:first-child){
+    color: white;
+    padding-right:  20px;
+ }
