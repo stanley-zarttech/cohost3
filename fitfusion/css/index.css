@@ -183,3 +183,7 @@ font-weight: bold;
   #boxes .box img{
     width: 200px;
 }
+
+.content{
+    background-color: rgb(218, 216, 216);
+}
