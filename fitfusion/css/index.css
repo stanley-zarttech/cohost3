@@ -138,3 +138,18 @@ font-weight: bold;
     color: white;
     padding-right:  20px;
  }
+
+ #boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 15%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+}
