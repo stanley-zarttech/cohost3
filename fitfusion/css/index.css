@@ -139,17 +139,47 @@ font-weight: bold;
     padding-right:  20px;
  }
 
- #boxes{
-    margin-top: 20px;
-}
-
-#boxes .box{
+ #boxes .box{
     float: left;
     text-align: center;
     width: 15%;
     padding: 10px;
 }
 
-#boxes .box img{
+.box {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .box:nth-child(1) {
+    width: 30%;
+    height: 200px;
+    margin-top: 100px;
+  }
+  
+  .box:nth-child(2) {
+    width: 40%;
+    height: 300px;
+  }
+  
+  .box:nth-child(3) {
+    width: 25%;
+    height: 150px;
+    margin-top: 70px;
+  }
+  
+  .box:nth-child(4) {
+    width: 35%;
+    height: 250px;
+  }
+  
+  .box:nth-child(5) {
+    width: 40%;
+    height: 180px;
+    margin-top: 30px;
+  }
+
+  #boxes .box img{
     width: 200px;
 }
