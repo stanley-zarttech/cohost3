@@ -156,48 +156,65 @@ font-weight: bold;
  #boxes .box{
     float: left;
     text-align: center;
-    width: 15%;
+    width: 17%;
     padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .box {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
   }
   
   .box:nth-child(1) {
-    width: 30%;
-    height: 200px;
-    margin-top: 100px;
+    width: 40%;
+    height: 300px;
+    margin-top: 10px;
+    background-image: url('../assets/fashion.jpg');
   }
   
   .box:nth-child(2) {
     width: 40%;
-    height: 300px;
+    height: 250px;
+    margin-top: 35px;
+    background-image: url('../assets/style.jpg');
   }
   
   .box:nth-child(3) {
     width: 25%;
-    height: 150px;
+    height: 280px;
     margin-top: 70px;
+    background-image: url('../assets/drip.jpg');
   }
   
   .box:nth-child(4) {
     width: 35%;
     height: 250px;
+    background-image: url('../assets/steeze.jpg');
   }
   
   .box:nth-child(5) {
     width: 40%;
-    height: 180px;
-    margin-top: 30px;
+    height: 230px;
+    margin-top: 50px;
+    background-image: url('../assets/you.jpg');
   }
 
   #boxes .box img{
     width: 200px;
 }
 
+#boxes .box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
 .content{
-    background-color: rgb(218, 216, 216);
+    background-color: rgb(238, 232, 232);
+    height: 500px;
 }
