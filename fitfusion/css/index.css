@@ -171,6 +171,7 @@ font-weight: bold;
   }
   
   .box:nth-child(1) {
+    color: #ccc6c6;
     width: 40%;
     height: 300px;
     margin-top: 10px;
@@ -178,6 +179,7 @@ font-weight: bold;
   }
   
   .box:nth-child(2) {
+    color: #d2d1da;
     width: 40%;
     height: 250px;
     margin-top: 35px;
@@ -185,6 +187,7 @@ font-weight: bold;
   }
   
   .box:nth-child(3) {
+    color: #272020;
     width: 25%;
     height: 280px;
     margin-top: 70px;
@@ -192,16 +195,18 @@ font-weight: bold;
   }
   
   .box:nth-child(4) {
+    color: #c3c1c1;
     width: 35%;
     height: 250px;
     background-image: url('../assets/steeze.jpg');
   }
   
   .box:nth-child(5) {
+    color: #f3efef;
     width: 40%;
-    height: 230px;
+    height: 360px;
     margin-top: 50px;
-    background-image: url('../assets/you.jpg');
+    background-image: url('../assets/box-3.jpg');
   }
 
   #boxes .box img{
@@ -217,4 +222,15 @@ font-weight: bold;
 .content{
     background-color: rgb(238, 232, 232);
     height: 500px;
+}
+
+#boxes .box h3{
+    text-align: left;
+}
+
+#boxes .box p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
 }
