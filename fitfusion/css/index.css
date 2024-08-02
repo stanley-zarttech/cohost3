@@ -3,8 +3,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 100vh; 
+
 }
+
 
 body {
     background-image: linear-gradient(135deg, #e8e7e8 10%, #f2f2f2 100%);
@@ -19,18 +21,17 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-
 .header{
         justify-content: space-between;
    height: 380px;
    padding: 20px;
    position: relative;
    background-image: url('../assets/backgr1.avif');
-    background-size: cover; 
+background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+ 
 } 
-
 .menu{
     display: flex;
     justify-content: space-between;
@@ -97,7 +98,11 @@ font-weight: bold;
        align-items: center;
    /* color:rgb(55, 117, 111); */
 }
-
+.info-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .avatar-btn{
     display: flex;
     gap: 20px;
@@ -110,7 +115,6 @@ font-weight: bold;
         text-transform: capitalize;
         width: 400px;
 }
-
 .join-btn{
     background-color: white;
     border-radius: 50px;
@@ -118,7 +122,6 @@ font-weight: bold;
     border: none;
     box-shadow: 0 4px 8px 1px;
 }
-
 #avatars{
     display: block;
 }
@@ -155,228 +158,3 @@ font-weight: bold;
     color: white;
     padding-right:  20px;
  }
-
- #boxes .box{
-    float: left;
-    text-align: center;
-    width: 17%;
-    padding: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.box {
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .box:nth-child(1) {
-    color: #ccc6c6;
-    width: 40%;
-    height: 300px;
-    margin-top: 10px;
-    background-image: url('../assets/fashion.jpg');
-  }
-  
-  .box:nth-child(2) {
-    color: #d2d1da;
-    width: 40%;
-    height: 250px;
-    margin-top: 35px;
-    background-image: url('../assets/style.jpg');
-  }
-  
-  .box:nth-child(3) {
-    color: #272020;
-    width: 25%;
-    height: 280px;
-    margin-top: 70px;
-    background-image: url('../assets/drip.jpg');
-  }
-  
-  .box:nth-child(4) {
-    color: #c3c1c1;
-    width: 35%;
-    height: 250px;
-    background-image: url('../assets/steeze.jpg');
-  }
-  
-  .box:nth-child(5) {
-    color: #f3efef;
-    width: 40%;
-    height: 360px;
-    margin-top: 50px;
-    background-image: url('../assets/box-3.jpg');
-  }
-
-  #boxes .box img{
-    width: 200px;
-}
-
-#boxes .box img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-
-.content{
-    background-color: rgb(238, 232, 232);
-    height: auto;
-}
-
-.content hr{
-    margin-left: 20%;
-    margin-right: 3%;
-}
-
-#boxes .box h3{
-    text-align: left;
-}
-
-#boxes .box p{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: end;
-}
-
-  
-  .box-form {
-    margin-top: 100px;
-    margin-left: 200px;
-    width: 60%;
-    height: 790px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex: 1 1 100%;
-    align-items: stretch;
-    justify-content: space-between;
-    box-shadow: 0 0 20px 6px #090b6f85;
-  }
-
-  .box-form .left {
-    color: #FFFFFF;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../assets/fashion.jpg');
-    overflow: hidden;
-  }
-  .box-form .left .overlay {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    background: #ced0ef4f;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  .box-form .left .overlay h1 {
-    font-size: 50px;
-    line-height: 1;
-    font-weight: 20;
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
-  .box-form .left .overlay span p {
-    margin-top: 350px;
-    margin-bottom: 15px;
-    font-weight: 700;
-  }
-  .box-form .left .overlay span a {
-    background: #9fa7aa;
-    color: #ffffff;
-    margin-top: 25px;
-    padding: 10px 50px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0 3px 6px 1px #042d4657;
-  }
-  .box-form .left .overlay span a:last-child {
-    background: #9fa7aa;
-    margin-left: 25px;
-  }
-  .box-form .right {
-    padding-left: 30px;
-    padding-right: 30px;
-    overflow: hidden;
-  }
-  
-  .box-form .right h5 {
-    font-size: 25px;
-    line-height: 0;
-    margin-bottom: 80px;
-    padding-top: 160px;
-    text-align: center;
-  }
-  .box-form .right p {
-    font-size: 14px;
-    color: #B0B3B9;
-  }
-  .box-form .right .inputs {
-    overflow: hidden;
-  }
-  .box-form .right input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #B0B3B9;
-  }
-  .box-form .right .remember-me--forget-password {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .box-form .right .remember-me--forget-password input {
-    margin: 0;
-    margin-right: 7px;
-    width: auto;
-  }
-  .box-form .right button {
-    float: right;
-    color: #fff;
-    font-size: 16px;
-    padding: 12px 35px;
-    border-radius: 50px;
-    display: inline-block;
-    border: 0;
-    outline: 0;
-    box-shadow: 0px 4px 20px 0px #49c628a6;
-    background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
-  }
-  
-  label {
-    display: block;
-    position: relative;
-    margin-left: 30px;
-  }
-  
-  label::before {
-    content: ' \f00c';
-    position: absolute;
-    font-family: FontAwesome;
-    background: transparent;
-    border: 3px solid #70F570;
-    border-radius: 4px;
-    color: transparent;
-    left: -30px;
-    transition: all 0.2s linear;
-  }
-  
-  label:hover::before {
-    font-family: FontAwesome;
-    content: ' \f00c';
-    color: #fff;
-    cursor: pointer;
-    background: #70F570;
-  }
-  
-  label input[type="checkbox"] {
-    display: none;
-  }
