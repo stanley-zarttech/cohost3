@@ -3,29 +3,31 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh; 
-
+    height: auto;
 }
+
 a{
     cursor: pointer;
     text-decoration: none;
 }
+
 .header{
         justify-content: space-between;
    height: 380px;
    padding: 20px;
    position: relative;
    background-image: url('../assets/backgr1.avif');
-background-size: cover; 
+    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
- 
 } 
+
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .left-menu {
     display: flex;
     gap: 20px;
@@ -33,26 +35,31 @@ background-size: cover;
     border-radius: 30px;
     padding: 10px;
 }
+
 .right-menu{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .menu-item{
 color: white;
 font-weight: bold;
 }
+
 .brand{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
 .brand span{
     color: white;
     font-weight: bold;
     font-size: 22px;
 }
+
 .logo{
     width: 50px;
     height: 50px;
@@ -81,15 +88,18 @@ font-weight: bold;
        align-items: center;
    /* color:rgb(55, 117, 111); */
 }
+
 .info-left{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .avatar-btn{
     display: flex;
     gap: 20px;
 }
+
 .info-desc{
     color: white;
         font-size: 54px;
@@ -97,6 +107,7 @@ font-weight: bold;
         text-transform: capitalize;
         width: 400px;
 }
+
 .join-btn{
     background-color: white;
     border-radius: 50px;
@@ -104,29 +115,31 @@ font-weight: bold;
     border: none;
     box-shadow: 0 4px 8px 1px;
 }
+
 #avatars{
     display: block;
 }
+
 #avatars img{
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    
 }
 
 #avatars img:not(:first-child) {
-    margin-left:-13px;
-   
+    margin-left:-13px;   
 }
+
  .info-right{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    
+    gap: 20px;    
  }
+
  .spacer{
     flex: 0 1 1;
  }
+
  .info-right span:first-child{
     background-color: rgba(60, 103, 120, 0.616);
     width: fit-content;
@@ -134,7 +147,95 @@ font-weight: bold;
     border-radius: 30px;
     color: rgb(244, 237, 237);
  }
+
  .info-right span:not(:first-child){
     color: white;
     padding-right:  20px;
  }
+
+ #boxes .box{
+    float: left;
+    text-align: center;
+    width: 17%;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .box:nth-child(1) {
+    color: #ccc6c6;
+    width: 40%;
+    height: 300px;
+    margin-top: 10px;
+    background-image: url('../assets/fashion.jpg');
+  }
+  
+  .box:nth-child(2) {
+    color: #d2d1da;
+    width: 40%;
+    height: 250px;
+    margin-top: 35px;
+    background-image: url('../assets/style.jpg');
+  }
+  
+  .box:nth-child(3) {
+    color: #272020;
+    width: 25%;
+    height: 280px;
+    margin-top: 70px;
+    background-image: url('../assets/drip.jpg');
+  }
+  
+  .box:nth-child(4) {
+    color: #c3c1c1;
+    width: 35%;
+    height: 250px;
+    background-image: url('../assets/steeze.jpg');
+  }
+  
+  .box:nth-child(5) {
+    color: #f3efef;
+    width: 40%;
+    height: 360px;
+    margin-top: 50px;
+    background-image: url('../assets/box-3.jpg');
+  }
+
+  #boxes .box img{
+    width: 200px;
+}
+
+#boxes .box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    background-color: rgb(238, 232, 232);
+    height: auto;
+}
+
+.content hr{
+    margin-left: 20%;
+    margin-right: 3%;
+}
+
+#boxes .box h3{
+    text-align: left;
+}
+
+#boxes .box p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+}
