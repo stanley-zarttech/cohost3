@@ -4,9 +4,7 @@
     flex-direction: column;
     width: 100%;
     height: 100vh; 
-
 }
-
 
 body {
     background-image: linear-gradient(135deg, #e8e7e8 10%, #f2f2f2 100%);
