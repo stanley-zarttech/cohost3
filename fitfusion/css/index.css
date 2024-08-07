@@ -243,12 +243,10 @@ font-weight: bold;
     text-align: end;
 }
 
-  
   .box-form {
-    margin-top: 100px;
-    margin-left: 200px;
-    width: 60%;
-    height: 790px;
+    margin: auto;
+    width: 45%;
+    height: 250%;
     background: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
@@ -260,6 +258,7 @@ font-weight: bold;
   }
 
   .box-form .left {
+    width: 75%;
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,38 +269,41 @@ font-weight: bold;
     padding: 10px;
     width: 100%;
     height: 100%;
-    background: #ced0ef4f;
+    background: #ced0ef38;
     overflow: hidden;
     box-sizing: border-box;
   }
   .box-form .left .overlay h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
-    font-weight: 20;
-    margin-top: 40px;
+    font-weight: 25;
+    margin-top: 15px;
     margin-bottom: 100px;
   }
   .box-form .left .overlay span p {
-    margin-top: 350px;
+    margin-top: 150px;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 100;
+    font-size: medium;
   }
   .box-form .left .overlay span a {
     background: #9fa7aa;
     color: #ffffff;
-    margin-top: 25px;
-    padding: 10px 50px;
-    border-radius: 10px;
+    margin-top: 40px;
+    padding: 17px 20px;
+    border-radius: 50px;
     display: inline-block;
     box-shadow: 0 3px 6px 1px #042d4657;
   }
-  .box-form .left .overlay span a:last-child {
-    background: #9fa7aa;
-    margin-left: 25px;
+
+  .box-form .left p{
+    font-size: small;
+    font-weight: 100;
   }
+  
   .box-form .right {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 10px;
     overflow: hidden;
   }
   
@@ -309,11 +311,11 @@ font-weight: bold;
     font-size: 25px;
     line-height: 0;
     margin-bottom: 80px;
-    padding-top: 160px;
+    padding-top: 80px;
     text-align: center;
   }
   .box-form .right p {
-    font-size: 14px;
+    font-size: 13px;
     color: #B0B3B9;
   }
   .box-form .right .inputs {
@@ -322,8 +324,8 @@ font-weight: bold;
   .box-form .right input {
     width: 100%;
     padding: 10px;
-    margin-top: 25px;
-    font-size: 16px;
+    margin-top: 20px;
+    font-size: 14px;
     border: none;
     outline: none;
     border-bottom: 2px solid #B0B3B9;
@@ -335,7 +337,7 @@ font-weight: bold;
   }
   .box-form .right .remember-me--forget-password input {
     margin: 0;
-    margin-right: 7px;
+    margin-right: 8px;
     width: auto;
   }
   .box-form .right button {
