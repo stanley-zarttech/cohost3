@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Calculator</h1>
+        <button id="btn">Show Alert</button>
+    </div>
+</body>
+<script>
+    //alert('Welcome to Backend Course'); 
+    /** This is 
+     * a multil  
+     * line comment
+     */
+    //  const result = confirm('Are you sure you want to leave the page?')
+    // if (result == true) {
+    //     alert('Thank you for your patronage. ')
+    // }
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+        btn.remove();
+        alert('This aleert is triggered by a click on a Button');
+
+        const divEl = document.createElement('div');
+        divEl.innerHTML = `<span style='color:red' id='info'>This was created and added to the DOM programmatically</span>`;
+        document.getElementById('container').append(divEl)
+
+    })
+</script>
+
+</html>
