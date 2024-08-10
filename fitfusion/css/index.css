@@ -6,7 +6,6 @@
     height: 150vh; 
 
 }
-
 a{
     cursor: pointer;
     text-decoration: none;
@@ -82,13 +81,11 @@ font-weight: bold;
        align-items: center;
    /* color:rgb(55, 117, 111); */
 }
-
 .info-left{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .avatar-btn{
     display: flex;
     gap: 20px;
@@ -213,7 +210,181 @@ font-weight: bold;
 
 .content4{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: end;
+    gap: 50px;
+
 }
+.img1{
+width: 40vh;
+height: 45vh;
+border-radius: 10px;
+margin-top: 65px;
+}
+.img2{
+  width: 40vh; 
+  height: 45vh;
+  border-radius: 10px;
+  /* margin-bottom: 50vh; */
+}
+.img3{
+ width: 35vh;
+ height: 28vh;
+ border-radius: 10px;
+ margin-top: 17vh;
+}
+.img4{
+ height: 16vh;
+ width: 35vh;
+ border-radius: 10px;
+ margin-top: 28vh;
+}
+.login-main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .box-form {
+      margin: auto;
+      max-width:800px;
+      height: fit-content;
+      background: #FFFFFF;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex: 1 1 100%;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px 6px #090b6f85;
+      /* flex-wrap: wrap; */
+   
+    }
+  
+    .box-form .left {
+      width: 75%;
+      max-width: 100% !important;
+      color: #FFFFFF;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('../assets/fashion.jpg');
+      overflow: hidden;
+    }
+    .box-form .left .overlay {
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+      background: #ced0ef38;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .box-form .left .overlay h1 {
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 25;
+      margin-top: 15px;
+      margin-bottom: 100px;
+    }
+    .box-form .left .overlay span p {
+      margin-top: 150px;
+      margin-bottom: 15px;
+      font-weight: 100;
+      font-size: medium;
+    }
+    .box-form .left .overlay span a {
+      background: #9fa7aa;
+      color: #ffffff;
+      margin-top: 40px;
+      padding: 17px 20px;
+      border-radius: 50px;
+      display: inline-block;
+      box-shadow: 0 3px 6px 1px #042d4657;
+    }
+  
+    .box-form .left p{
+      font-size: small;
+      font-weight: 100;
+    }
+    
+    .box-form .right {
+      padding-left: 40px;
+      padding-right: 10px;
+      overflow: hidden;
+    }
+    
+    .box-form .right h5 {
+      font-size: 25px;
+      line-height: 0;
+      margin-bottom: 80px;
+      padding-top: 80px;
+      text-align: center;
+    }
+    .box-form .right p {
+      font-size: 13px;
+      color: #B0B3B9;
+    }
+    .box-form .right .inputs {
+      overflow: hidden;
+    }
+    .box-form .right input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #B0B3B9;
+    }
+    .box-form .right .remember-me--forget-password {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .box-form .right .remember-me--forget-password input {
+      margin: 0;
+      margin-right: 8px;
+      width: auto;
+    }
+    .box-form .right button {
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 35px;
+      border-radius: 50px;
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      box-shadow: 0px 4px 20px 0px #49c628a6;
+      background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+      margin-bottom: 30px;
+      margin-right: 10px;
+    }
+    
+    
+    label {
+      display: block;
+      position: relative;
+      margin-left: 30px;
+    }
+    
+    label::before {
+      content: ' \f00c';
+      position: absolute;
+      font-family: FontAwesome;
+      background: transparent;
+      border: 3px solid #70F570;
+      border-radius: 4px;
+      color: transparent;
+      left: -30px;
+      transition: all 0.2s linear;
+    }
+    
+    label:hover::before {
+      font-family: FontAwesome;
+      content: ' \f00c';
+      color: #fff;
+      cursor: pointer;
+      background: #70F570;
+    }
+    
+    label input[type="checkbox"] {
+      display: none;
+    }
