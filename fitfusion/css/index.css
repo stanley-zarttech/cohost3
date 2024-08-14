@@ -1,28 +1,31 @@
-*{box-sizing: border-box;}
-.main{
+* {
+    box-sizing: border-box;
+}
+
+.main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
 }
 
-a{
+a {
     cursor: pointer;
     text-decoration: none;
 }
 
-.header{
-        justify-content: space-between;
-   height: 380px;
-   padding: 20px;
-   position: relative;
-   background-image: url('../assets/backgr1.avif');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-} 
+.header {
+    justify-content: space-between;
+    height: 380px;
+    padding: 20px;
+    position: relative;
+    background-image: url('../assets/backgr1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,124 +39,193 @@ a{
     padding: 10px;
 }
 
-.right-menu{
+.right-menu {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.menu-item{
-color: white;
-font-weight: bold;
+.menu-item {
+    color: white;
+    font-weight: bold;
 }
 
-.brand{
+.brand {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.brand span{
+.brand span {
     color: white;
     font-weight: bold;
     font-size: 22px;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
 
-.login{
+.login {
     border: 1px solid white;
-    padding:5px 20px;
+    padding: 5px 20px;
     border-radius: 30px;
 
 }
 
-.best-seller{
+.best-seller {
     border: 1px solid white;
     background-color: rgb(55, 117, 111);
     padding: 5px 20px;
     border-radius: 30px
 }
 
-.info{
-    margin-top:110px;
+.info {
+    margin-top: 110px;
     /* position: absolute; */
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-   /* color:rgb(55, 117, 111); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color:rgb(55, 117, 111); */
 }
 
-.info-left{
+.info-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.avatar-btn{
+.avatar-btn {
     display: flex;
     gap: 20px;
 }
 
-.info-desc{
+.info-desc {
     color: white;
-        font-size: 54px;
-        font-weight: bold;
-        text-transform: capitalize;
-        width: 400px;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 400px;
 }
 
-.join-btn{
+.join-btn {
     background-color: white;
     border-radius: 50px;
-    padding: 5px  15px;
+    padding: 5px 15px;
     border: none;
     box-shadow: 0 4px 8px 1px;
 }
 
-#avatars{
+#avatars {
     display: block;
 }
 
-#avatars img{
+#avatars img {
     width: 30px;
     height: 30px;
     border-radius: 30px;
 }
 
 #avatars img:not(:first-child) {
-    margin-left:-13px;   
+    margin-left: -13px;
 }
 
- .info-right{
+.info-right {
     display: flex;
     flex-direction: column;
-    gap: 20px;    
- }
+    gap: 20px;
+}
 
- .spacer{
+.spacer {
     flex: 0 1 1;
- }
+}
 
- .info-right span:first-child{
+.info-right span:first-child {
     background-color: rgba(60, 103, 120, 0.616);
     width: fit-content;
     padding: 5px 2px;
     border-radius: 30px;
     color: rgb(244, 237, 237);
- }
+}
 
- .info-right span:not(:first-child){
+.info-right span:not(:first-child) {
     color: white;
-    padding-right:  20px;
- }
+    padding-right: 20px;
+}
 
- #boxes .box{
+.content {
+    background-color: lightblue;
+    background-size: cover;
+    height: 120vh;
+    padding: 50px;
+
+}
+
+.fcontent {
+    display: flex;
+    /* gap: 10px; */
+    margin-top: 1px;
+}
+
+.fcontspan {
+    width: fit-content;
+    padding: 5px 2px;
+    border-radius: 30px;
+    border: solid rgb(31, 30, 30);
+    color: rgb(24, 24, 24);
+    margin-left: 20px;
+    background-color: rgb(110, 108, 108);
+}
+
+.line {
+    width: 300px;
+    border-bottom: solid black;
+
+}
+
+.line2 {
+    width: 700px;
+    border-bottom: solid white;
+
+}
+
+.ncontent {
+    margin-top: 90px;
+}
+
+.span {
+    width: fit-content;
+    padding: 5px 2px;
+    border-radius: 30px;
+    border: solid rgb(31, 30, 30);
+    color: rgb(24, 24, 24);
+    margin-left: 20px;
+    background-color: rgb(97, 95, 95);
+}
+
+.content3 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-1 {
+    color: black;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 600px;
+}
+
+.info-2 {
+    text-transform: capitalize;
+}
+
+#boxes .box {
     float: left;
     text-align: center;
     width: 17%;
@@ -168,72 +240,60 @@ font-weight: bold;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-  }
-  
-  .box:nth-child(1) {
-    color: #ccc6c6;
-    width: 40%;
-    height: 300px;
-    margin-top: 10px;
+}
+
+.box:nth-child(1) {
+    width: 40vh;
+    height: 45vh;
+    border-radius: 10px;
+    /* margin-bottom: 50vh; */
     background-image: url('../assets/fashion.jpg');
-  }
-  
-  .box:nth-child(2) {
-    color: #d2d1da;
-    width: 40%;
-    height: 250px;
-    margin-top: 35px;
+}
+
+.box:nth-child(2) {
+    width: 35vh;
+    height: 28vh;
+    border-radius: 10px;
+    margin-top: 17vh;
     background-image: url('../assets/style.jpg');
-  }
-  
-  .box:nth-child(3) {
+}
+
+.box:nth-child(3) {
     color: #272020;
     width: 25%;
     height: 280px;
     margin-top: 70px;
     background-image: url('../assets/drip.jpg');
-  }
-  
-  .box:nth-child(4) {
-    color: #c3c1c1;
-    width: 35%;
-    height: 250px;
-    background-image: url('../assets/steeze.jpg');
-  }
-  
-  .box:nth-child(5) {
-    color: #f3efef;
-    width: 40%;
-    height: 360px;
-    margin-top: 50px;
-    background-image: url('../assets/box-3.jpg');
-  }
+}
 
-  #boxes .box img{
+.box:nth-child(4) {
+    height: 16vh;
+    width: 35vh;
+    border-radius: 10px;
+    margin-top: 28vh;
+    background-image: url('../assets/steeze.jpg');
+}
+
+#boxes .box img {
     width: 200px;
 }
 
-#boxes .box img{
+#boxes .box img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
-.content{
-    background-color: rgb(238, 232, 232);
+.content {
+    background-color: lightblue;
     height: auto;
 }
 
-.content hr{
-    margin-left: 20%;
-    margin-right: 3%;
-}
-
-#boxes .box h3{
+#boxes .box h3 {
     text-align: left;
 }
 
-#boxes .box p{
+#boxes .box p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
