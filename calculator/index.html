@@ -13,7 +13,9 @@
 
     <div id="container">
         <h1>Calculator</h1>
-        <button id="btn">Show Alert</button>
+        <butoon id="btn" style="border: 1px solid gray; border-radius: 10px;width: fit-content;padding: 10px 20px;">Show
+            Alert</butoon>
+        <button onclick="functionName('Mark')">Call function</button>
     </div>
 </body>
 <script>
@@ -29,13 +31,88 @@
     const btn = document.getElementById('btn');
     btn.addEventListener('click', () => {
         btn.remove();
-        alert('This aleert is triggered by a click on a Button');
+        // alert('This aleert is triggered by a click on a Button');
 
         const divEl = document.createElement('div');
         divEl.innerHTML = `<span style='color:red' id='info'>This was created and added to the DOM programmatically</span>`;
-        document.getElementById('container').append(divEl)
+        document.getElementById('container').append(divEl); let age = 25;
+        const date = new Date();
+        const now = Date.now();
+
+        console.log('date: ', date, ' now ', now);
+
+        const user = {
+            firstName: 'Victory',
+            lastName: 'Madu',
+            email: 'victory.madu@gmail.com',
+            phone: '0804839303930',
+            age: 24
+        }
+        console.log('user: ' + user['firstName']);
+
+        const studentNames = [
+            'Vicotry', 'Mike', 'Michael', 'Favor', 30, {
+                firstName: 'Victory',
+                lastName: 'Madu',
+                email: 'victory.madu@gmail.com',
+                phone: '0804839303930',
+                age: 24
+            }, [12, 13, 144]
+        ]
+        studentNames[3] = 'Femi'
+        console.log('studentName: ', studentNames)
+        // console.log('first student: ', )
+        console.log('studnet names: ', studentNames)
+
 
     })
+    function functionName() {
+        console.log('This function is called: ')
+    }
+
+    function login(email, password) {
+        console.log('email and password', email, password);
+    }
+    functionName('Joshua');
+
+    const signUp = () => {
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const user = {
+            email: email,
+            password
+        }
+        console.log('user datails: ', user);
+    }
+
+    signUp('example@gmail.com', '1220dkd', '08038409430', 'Friday', 'Earnest');
 </script>
 
 </html>
+
+<!-- String
+ let name ='Victory';
+
+ Number
+ const age =25;
+
+ Boolean: true/false
+ const yearIs2024 = false;
+
+ Date
+ const now = new Date();
+ const now = Date.now()
+
+ Object
+ const user = {
+ firstName:'Victory',
+ lastName:'Madu',
+ email:'victory.madu@gmail.com',
+ phone:'0804839303930',
+ age:24
+ }
+
+ const studentNames=[
+ 'Vicotry','Mike','Michael','Favor'
+ ]
+-->
