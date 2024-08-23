@@ -184,3 +184,73 @@
 <!-- Math Functions -->
 <!-- Random -->
 <!-- const randomValue = Math.random()/ -->
+
+
+
+
+
+
+<script>
+    const signup = (username, firstName, lastName, phone, address, email, password) => {
+    const uname = document.getElementById('username').value;
+    const fname = document.getElementById('firstName').value;
+    const lname = document.getElementById('lastName').value;
+    const pnumber = document.getElementById('phone').value;
+    const home = document.getElementById('address').value;
+    const emailInput = document.getElementById('email').value;
+    const passwordInput = document.getElementById('password');
+  
+   const user = {
+    uname: username,
+    fname: firstName,
+    lname: lastName,
+    pnumber: phone,
+    home: address,  
+    emailInput: email,
+    passwordInput: password,
+   }
+   
+   console.log('user datails:', user); 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    const signupForm = {
+    formElement: document.getElementById('signupform'),
+    
+    username: "Johnniekay",
+    firstName: "Johnson",
+    lastName: "Ikechukwu",
+    phoneNumber: "+2347068513128",
+    address: "248 old onitsha road",
+    email: "johnsonkalu98@gmail.com",
+    password: "12345qwerty",
+
+    getFormData: function () {
+        return {
+            username: this.username,
+            firstName: this.firstName,
+            lastName: this.lastName,
+            phoneNumber: this.phoneNumber,
+            address: this.address,
+            email: this.email,
+            password: this.password
+        };
+    }
+};
+
+const formData = signupForm.getFormData();
+console.log(formData);
+
+  </script>
