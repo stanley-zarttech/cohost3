@@ -8,31 +8,31 @@
   <script src="https://kit.fontawesome.com/d4fcaf7a03.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <script>
-    function signup (username, firstName, lastName, phone, address, email, password) {
+    function signup() {
     const uname = document.getElementById('username').value;
     const fname = document.getElementById('firstName').value;
     const lname = document.getElementById('lastName').value;
     const pnumber = document.getElementById('phone').value;
     const home = document.getElementById('address').value;
     const emailInput = document.getElementById('email').value;
-    const passwordInput = document.getElementById('password');
-  
-   const user = {
-    uname: username,
-    fname: firstName,
-    lname: lastName,
-    pnumber: phone,
-    home: address,  
-    emailInput: email,
-    passwordInput: password,
-   }
-   
-   console.log('user datails:', user); 
-}
-</script>
+    const passwordInput = document.getElementById('password').value;
 
+    const user = {
+        uname,
+        fname,
+        lname,
+        pnumber,
+        home,
+        emailInput,
+        passwordInput
+    };
+
+    console.log('user datails:', user);
+    document.getElementById('signup').reset();
+}
+
+  </script>
   <div class="box-form">
     <div class="left">
       <div class="overlay">
@@ -53,22 +53,22 @@
       <p></p>
       <div class="inputs">
         <form id="signup">
-          <input id="username" type="text" placeholder="Username:">
+          <input id="username" type="text" autocomplete="off" placeholder="Username:">
           <br><br>
-          <input id="firstName" type="text" placeholder="First Name:">
-          <input id="lastName" type="text" placeholder="Last Name:">
+          <input id="firstName" type="text" autocomplete="off" placeholder="First Name:">
+          <input id="lastName" type="text" autocomplete="off" placeholder="Last Name:">
           <br><br>
-          <input id="phone" type="number" placeholder="Phone Numer(+234):">
-          <input id="address" type="text" placeholder="Address:">
+          <input id="phone" type="number" autocomplete="off" placeholder="Phone Numer(+234):">
+          <input id="address" type="text" autocomplete="off" placeholder="Address:">
           <br><br>
-          <input id="email" type="email" placeholder="Email:">
-          <input id="password" type="password" placeholder="Password:">
+          <input id="email" type="email" autocomplete="off" placeholder="Email:">
+          <input id="password" type="password" autocomplete="off" placeholder="Password:">
         </form>
-      </div>
         <br><br>
-        <button type="button" onclick="">Signup</button>
-    </div>
-    </div>
+        <div>
+          <button type="button" onclick="signup()">Sign Up</button>
+        </div>
+      </div>
 
 </body>
 </html>
