@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="fitfusion.js"></script>
   <link rel="stylesheet" href="css/index.css">
   <script src="https://kit.fontawesome.com/d4fcaf7a03.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <script>
+    const signupForm = {
+    formElement: document.getElementById('signupform'),
+    
+    username: "Johnniekay",
+    firstName: "Johnson",
+    lastName: "Ikechukwu",
+    phoneNumber: "+2347068513128",
+    address: "248 old onitsha road",
+    email: "johnsonkalu98@gmail.com",
+    password: "12345qwerty",
+
+    getFormData: function () {
+        return {
+            username: this.username,
+            firstName: this.firstName,
+            lastName: this.lastName,
+            phoneNumber: this.phoneNumber,
+            address: this.address,
+            email: this.email,
+            password: this.password
+        };
+    }
+};
+
+const formData = signupForm.getFormData();
+console.log(formData);
+
+  </script>
   <div class="box-form">
     <div class="left">
       <div class="overlay">
@@ -28,20 +56,23 @@
       <h5>Create an account</h5>
       <p></p>
       <div class="inputs">
+        <form id="signupform">
         <input type="text" placeholder="Username:">
                 <br><br>
-                <input type="text" placeholder="First Name:">
-                <input type="text" placeholder="Last Name:">
+                <input id="firstName" type="text" placeholder="First Name:">
+                <input id="lastName" type="text" placeholder="Last Name:">
                 <br><br>
-                <input type="number" placeholder="Phone Numer(+234):">
-                <input type="text" placeholder="Address:">
+                <input id="phoneNumber" type="number" placeholder="Phone Numer(+234):">
+                <input id="Address" type="text" placeholder="Address:">
                 <br><br>
-                <input type="email" placeholder="Email:">
-                <input type="password" placeholder="Password:">        
+                <input id="Email" type="email" placeholder="Email:">
+                <input id="Password" type="password" placeholder="Password:">
+        </form>
       </div>
         <br><br>
-        <button>Signup</button>
+        <button type="button" onclick="">Signup</button>
     </div>
     </div>
+
 </body>
 </html>
