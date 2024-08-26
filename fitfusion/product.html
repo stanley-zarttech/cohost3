@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script>
-        document.getElementById('measurements').addEventListener('change', function() {
-            var customMeasurements = document.getElementById('custom-measurements');
-            if (this.value === 'custom') {
-                customMeasurements.style.display = 'block';
-            } else {
-                customMeasurements.style.display = 'none';
-            }
-        });
-    </script>
+    
     <div class="menu">
         <div class="left-menu">
             <a class="menu-item">Home</a>
@@ -172,5 +163,15 @@
                 </footer>
         </div>
     </div>
+    <script>
+        document.getElementById('measurements').addEventListener('change', function() {
+            var customMeasurements = document.getElementById('custom-measurements');
+            if (this.value === 'custom') {
+                customMeasurements.style.display = 'block';
+            } else {
+                customMeasurements.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
