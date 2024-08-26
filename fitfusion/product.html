@@ -7,161 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="logo.png" alt="Company Logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <a href="cart.html">Cart (0)</a>
-        </div>
-    </header>
-
-    <!-- Main Product Section -->
-    <main>
-        <section class="product-detail">
-            <div class="product-images">
-                <img src="product-main.jpg" alt="[Product Name] Main Image">
-            </div>
-            <div class="product-info">
-                <h1>[Product Name]</h1>
-
-                <p class="price">$[Price]</p>
-                
-                <p class="weight">Weight: [Weight] kg</p>
-
-                <form action="add-to-cart.html" method="POST">
-
-                    <label for="weight">Weight:</label>
-                    <select id="weight" name="weight" required>
-                        <option value="" disabled selected>Select weight</option>
-                        <option value="S">75-85kg</option>
-                        <option value="M">85-95kg</option>
-                        <option value="L">95-100</option>
-                        <option value="XL">105 ===></option>
-                    </select>
-
-                    <label for="size">Size:</label>
-                    <select id="size" name="size" required>
-                        <option value="" disabled selected>Select size</option>
-                        <option value="S">Small</option>
-                        <option value="M">Medium</option>
-                        <option value="L">Large</option>
-                        <option value="XL">Extra Large</option>
-                    </select>
-
-                    <label for="measurements">Tailored Measurements:</label>
-                    <select id="measurements" name="measurements">
-                        <option value="" disabled selected>Select if applicable</option>
-                        <option value="custom">Custom Measurements</option>
-                        <option value="none">No Tailoring Needed</option>
-                    </select>
-
-                    <div id="custom-measurements" style="display:none;">
-                        <h4>Shirt Measurements</h4>
-                        <br><br>
-                        <label for="shoulder">Shoulder (in cm):</label>
-                        <input type="number" id="shoulder" name="shoulder" min="0">
-
-                        <label for="chest">Chest (in cm):</label>
-                        <input type="number" id="Chest" name="chest" min="0">
-                        <br>
-                        <label for="sleeve-length">Sleeve Length (in cm):</label>
-                        <input type="number" id="Slength" name="sleevelength" min="0">
-
-                        <label for="sleeve-width">Sleeve width (in cm):</label>
-                        <input type="number" id="Swidth" name="sleeve-width" min="0">
-                        <br>
-                        <label for="Neck">Neck (in cm):</label>
-                        <input type="number" id="Neck" name="neck" min="0">
-
-                        <label for="length"> Top Length (in cm):</label>
-                        <input type="number" id="Tlength" name="top-length" min="0">
-                        <br><br>
-
-                        <h4>Trouser Measurements</h4>
-
-                        <label for="waist">Waist (in cm):</label>
-                        <input type="number" id="Waist" name="waist" min="0">
-
-                        <label for="lap">Lap (in cm):</label>
-                        <input type="number" id="Lap" name="lap" min="0">
-                        <br>
-                        <label for="flap"> Flap (in cm):</label>
-                        <input type="number" id="Flap" name="flap" min="0">
-
-                        <label for="Half-Knee">Half-Knee Length (in cm):</label>
-                        <input type="number" id="HKnee" name="half-knee" min="0">
-                        <br>        
-                        <label for="Helm-width">Helm width (in cm):</label>
-                        <input type="number" id="Hwidth" name="helm-width" min="0">
-
-                        <label for="Trouser-lenght">Trouser Length (in cm):</label>
-                        <input type="number" id="Trlenght" name="trouser-lenght" min="0">
-                    </div>
-
-                    <!-- Vendor ID -->
-                    <p class="vendor-id">Vendor ID: [VendorID]</p>
-
-                    <!-- Quantity and Add to Cart -->
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-
-                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
-                </form>
-
-                <div class="product-meta">
-                    <p>SKU: [Product SKU]</p>
-                    <p>Category: <a href="category.html">[Category Name]</a></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Product Description and Reviews Section -->
-        <section class="product-extra-info">
-            <div class="tabs">
-                <button class="tab-link active" onclick="openTab(event, 'Description')">Description</button>
-                <button class="tab-link" onclick="openTab(event, 'Reviews')">Reviews</button>
-            </div>
-
-            <div id="Description" class="tab-content active">
-                <h2>Product Description</h2>
-                <p>
-                    [Detailed product description goes here. Include specifications, usage instructions, and any other relevant information.]
-                </p>
-            </div>
-
-            <div id="Reviews" class="tab-content">
-                <h2>Customer Reviews</h2>
-                <div class="review">
-                    <p><strong>[Customer Name]</strong> - <em>[Review Date]</em></p>
-                    <p>[Customer review text goes here.]</p>
-                </div>
-                <!-- More reviews can be added in similar divs -->
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <p>&copy; [Current Year] [Company Name]. All Rights Reserved.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
     <script>
         document.getElementById('measurements').addEventListener('change', function() {
             var customMeasurements = document.getElementById('custom-measurements');
@@ -172,5 +17,160 @@
             }
         });
     </script>
+    <div class="menu">
+        <div class="left-menu">
+            <a class="menu-item">Home</a>
+            <a class="menu-item">About Us</a>
+            <a href="product.html" class="menu-item">Products</a>
+            <a class="menu-item">Contact Us</a>
+        </div>
+        <div class="brand">
+            <img class="logo" src="" alt="logo">
+            <span>FitFusion</span>
+        </div>
+        <div class="right-menu">
+            <a href="login.html" class="menu-item login">Login</a>
+            <a href="signup.html" class="menu-item best-seller">Create an account</a>
+        </div>
+    </div>
+    <div>
+        <div class="product-detail">
+            <div class="product-images">
+                <img src="product-main.jpg" alt="[Product Name] Main Image">
+            </div>
+            <div class="product-info">
+
+                <div class="catalog-section">
+            
+                <h2>-------------</h2>
+
+                <div class="catalog">
+                <div class="catalog-item">
+                    <img src="design1.jpg" alt="Design 1">
+                    <p>Design 1</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design2.jpg" alt="Design 2">
+                    <p>Design 2</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design3.jpg" alt="Design 3">
+                    <p>Design 3</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design4.jpg" alt="Design 4">
+                    <p>Design 4</p>
+                    <button>Select</button>
+                </div>
+                    <img src="design1.jpg" alt="Design 5">
+                    <p>Design 1</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design2.jpg" alt="Design 6">
+                    <p>Design 2</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design3.jpg" alt="Design 7">
+                    <p>Design 3</p>
+                    <button>Select</button>
+                </div>
+                <div class="catalog-item">
+                    <img src="design4.jpg" alt="Design 8">
+                    <p>Design 4</p>
+                    <button>Select</button>
+                </div>
+            
+                </div>
+        
+                <form action="cart.html" method="POST">
+
+                <label for="weight">Weight:</label>
+                <select id="weight" name="weight" required>
+                <option value="" disabled selected>Select weight</option>
+                <option value="S">75-85kg</option>
+                <option value="M">85-95kg</option>
+                <option value="L">95-100</option>
+                <option value="XL">105 ===></option>
+                </select>
+
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                <option value="" disabled selected>Select size</option>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+                </select>
+
+                <label for="measurements">Tailored Measurements:</label>
+                <select id="measurements" name="measurements">
+                <option value="" disabled selected>Select if applicable</option>
+                <option value="custom">Custom Measurements</option>
+                <option value="none">No Tailoring Needed</option>
+                </select>
+
+                <div id="custom-measurements" style="display:none;">
+                <h4>Shirt Measurements</h4>
+                <label for="shoulder">Shoulder (in cm):</label>
+                <input type="number" id="shoulder" name="shoulder" min="0">
+                <label for="chest">Chest (in cm):</label>
+                <input type="number" id="Chest" name="chest" min="0">
+                <br>
+                <label for="sleeve-length">Sleeve Length (in cm):</label>
+                <input type="number" id="Slength" name="sleevelength" min="0">
+                <label for="sleeve-width">Sleeve width (in cm):</label>
+                <input type="number" id="Swidth" name="sleeve-width" min="0">
+                <br>
+                <label for="Neck">Neck (in cm):</label>
+                <input type="number" id="Neck" name="neck" min="0">
+                <label for="length"> Top Length (in cm):</label>
+                <input type="number" id="Tlength" name="top-length" min="0">
+                <br>
+                <h4>Trouser Measurements</h4>
+                <label for="waist">Waist (in cm):</label>
+                <input type="number" id="Waist" name="waist" min="0">
+                <label for="lap">Lap (in cm):</label>
+                <input type="number" id="Lap" name="lap" min="0">
+                <br>
+                <label for="flap"> Flap (in cm):</label>
+                <input type="number" id="Flap" name="flap" min="0">
+                <label for="Half-Knee">Half-Knee Length (in cm):</label>
+                <input type="number" id="HKnee" name="half-knee" min="0">
+                <br>        
+                <label for="Helm-width">Helm width (in cm):</label>
+                <input type="number" id="Hwidth" name="helm-width" min="0">
+                <label for="Trouser-lenght">Trouser Length (in cm):</label>
+                <input type="number" id="Trlenght" name="trouser-lenght" min="0">
+                </div>
+
+                <p class="vendor-id">Vendor ID: 3874FF</p>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <p class="price">$25</p>
+
+                <button type="submit" class="cart-btn">Add to Cart</button>
+                <br><br>
+                <a href="">View cart</a>
+                </form>
+                </div>
+                <br><br>
+
+                <footer>
+                <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+                </div>
+                <p>&copy; [Current Year] [Company Name]. All Rights Reserved.</p>
+                </footer>
+        </div>
+    </div>
 </body>
 </html>
