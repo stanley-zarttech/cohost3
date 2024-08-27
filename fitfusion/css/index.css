@@ -27,7 +27,7 @@ a{
 
 .header{
         justify-content: space-between;
-   height: 380px;
+   height: fit-content;
    padding: 20px;
    position: relative;
    background-image: url('../assets/backgr1.avif');
@@ -395,3 +395,5 @@ text-align: end;
   label input[type="checkbox"] {
     display: none;
   }
+
+  
