@@ -35,7 +35,7 @@
             
                 <h2>------------------------------------</h2>
                 <p class="vendor-id">Vendor ID: 3874FF</p>
-                <div class="catalog">
+                <div id="catalog" class="catalog">
                         <div class="catalog-item" aria-required="true">
                             <input type="checkbox" id="design1" name="selectedItems[]" value="Design 1" hidden data-price="15">
                             <label for="design1">
@@ -101,7 +101,7 @@
                         </div>
                     
                 </div>
-                <form action="" method="POST">
+                <form id="orderForm" action="" method="POST">
 
                     <label for="weight">Weight:</label>
                     <select id="weight" name="weight" required>
@@ -168,8 +168,8 @@
                             <p>Total Price: $<span id="totalPrice">0</span></p>
                         </div>
 
-                    <button type="submit" class="cart-btn">Add to Cart</button>
-                    <button type="submit" class="cart-btn">Remove from Cart</button>
+                    <button type="button" class="cart-btn" id="addToCart">Add to Cart</button>
+                    <button type="button" class="cart-btn" id="removeFromCart">Remove from Cart</button>
                     <br><br>
                     <a href="">View cart</a>
                 </form>
@@ -187,8 +187,9 @@
         </div>
         </div>
     </div>
+
     <script>
-        
+        // Displays the custom measurement when selected        
          document.getElementById('measurements').addEventListener('change', function() {
             var customMeasurements = document.getElementById('custom-measurements');
             if (this.value === 'custom') {
@@ -198,6 +199,7 @@
             }
         });
 
+        // Accumulate the total price
         const checkboxes = document.querySelectorAll('.catalog-item input[type="checkbox"]');
         const totalPriceElement = document.getElementById('totalPrice');
 
@@ -217,6 +219,7 @@
             checkbox.addEventListener('change', updateTotalPrice);
         });
 
+        //Product class
         class Product {
             constructor(vendorId, products, weight, size, measurement, price) {
                 this.vendorId = vendorId;
@@ -291,6 +294,21 @@
                 product.logAction(action);
             });
         });
+
+        // Clears the form and catalog after added to cart or removed 
+        document.getElementById('addToCart').addEventListener('click', function() {
+                document.querySelectorAll('#catalog input[type="checkbox"]').forEach(checkbox => {
+                    checkbox.checked = false;
+                });
+                document.getElementById('orderForm').reset();
+                document.getElementById('custom-measurements').style.display = 'none';
+                document.getElementById('totalPrice').textContent = '0';
+            });
+
+            document.getElementById('removeFromCart').addEventListener('click', function() {
+                // Implement logic for "Remove from Cart" if required
+                console.log('Removed from Cart');
+            });
 
     </script>
 </body>
