@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Concept</title>
+</head>
+
+<body>
+    <!-- 
+    1. Class -- create instances of an object
+    2. Abstraction --- Hiding information
+    3. Encapsulation --- helps to keep properties or methods private in a class
+    4. Inheritance -- Makes properties and methods in parent class available in child classes
+    5. Polymophism --- helps to have different and many inplemenataions of properties or methods from a parent class. usualy achieved using ovveride
+    -->
+    <script>
+        class Animal {
+            color = 'black';
+            walk(name) {
+                console.log(name + ' is now walking. Color is: ', this.color)
+            }
+            changeColor(color) {
+                this.color = color
+            }
+        }
+        const animal1 = new Animal();
+        animal1.walk('Goat')
+        animal1.changeColor('grey')
+        const animal2 = new Animal();
+        animal1.walk('Dog')
+        const animal3 = new Animal();
+
+        class Cat extends Animal {
+            changeColor(color) {
+                alert('Your color is ' + color)
+            }
+        }
+        const cat = new Cat();
+        cat.changeColor('blue')
+        cat.walk('Cat')
+
+
+        class Human extends Animal {
+            static age = 45;
+            constructor(sex, age, maritalStatus) {
+                super();
+                this.Age = age;
+                this.Sex = sex;
+                this.MaritalStatus = maritalStatus;
+                this._name = 'Jame'
+            }
+            talk() {
+                console.log('human is now talking');
+                console.log('properties: ', this.Sex, this.Age, this.MaritalStatus)
+            }
+            getName() {
+
+                return this._name;
+            }
+            setName(name) {
+                this._name = name;
+            }
+            static logProperties() {
+                console.log('Human properties: ', this.age)
+            }
+        }
+        const human = new Human('Male', 22, 'Maried');
+        console.log('human name: ', human._name)
+        Human.logProperties()
+
+        console.log('Human Name: ', human.getName())
+        human.setName('Philip')
+        console.log('Human name 1: ', human.getName())
+        function Male(age, color, height) {
+            this.age = age;
+            this.color = color;
+            this.height = height
+            this.logProperties = function () {
+                console.log('male properties: ', this.age, this.color, this.height)
+            }
+        }
+
+        const male = new Male(22, 'dark', 6.4);
+        male.logProperties();
+        // human.Age = 22;
+        // human.Sex = 'Maile';
+        // human.MaritalStatus = 'Married';
+        human.talk()
+
+        const humanKeys = Object.keys(human);
+        const humanValues = Object.values(human)
+        console.log('keys: ', humanKeys, ' values: ', humanValues)
+    </script>
+</body>
+
+</html>
+
+<!-- 
+Assignment:
+1. Write an Article on JavaScript Object Oriented Programming(OOP)
+2. Create classes for User, Product, Order, OrderItem for our FitFusion project
+3. User should have properties in our signup form apart confirm password.
+   user should have the following methods:
+   a. signup b. login c. change password, d. verifyEmail
+   (For Femi)
+
+   Product should have properties like :name, size, unitOfMeasure, weight, price, vendorId
+   product methods should include create, update,delete;
+(For Johnson)
+   OrderItem -> properties => productId, userId,timestamp, discount, deliveryStatus
+               methods    => create, delete, returnItem,deliver
+               for(Abiodun)
+
+  Order  => properties => orderItems:[orderItem], totalPrice, timestamp
+            method     => checkout, cancel, returnAllItems
+            (for Mubarak)
+
+
+  
+-->
