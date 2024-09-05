@@ -1,0 +1,4 @@
+<p style="background-color:blue;color:white;height:200px">This is created with Fs writeFileSync function</p>
+This content was append to existing file
+
+This content was append to existing file
